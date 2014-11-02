@@ -1,5 +1,5 @@
 declare name "Channel Delay (Stereo)";
-declare version "0.0.1";
+declare version "0.1.0";
 declare author "Viacheslav Lotsmanov";
 declare license "GNU/GPLv3";
 
