@@ -1,7 +1,7 @@
 declare name "Channel Delay (Stereo)";
 declare version "0.1.0";
 declare author "Viacheslav Lotsmanov";
-declare license "GNU/GPLv3";
+declare license "GNU/GPLv3 https://github.com/unclechu/faust-channel-delay/blob/master/LICENSE";
 
 delay_l = hslider("Left delay (ms)", 0, 0, 5000, 1);
 delay_r = hslider("Right delay (ms)", 0, 0, 5000, 1);
