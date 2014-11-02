@@ -13,8 +13,10 @@ import("music.lib");
 
 delay_by_ms(ms) = int((SR/1000.0) * ms);
 
-gain_l = hslider("Left gain (dB)", 0, -90, +12, 1) : db2linear;
-gain_r = hslider("Right gain (dB)", 0, -90, +12, 1) : db2linear;
+smooth(c) = *(1-c) : +~*(c);
+
+gain_l = hslider("Left gain (dB)", 0, -90, +12, 1) : db2linear : smooth(0.999);
+gain_r = hslider("Right gain (dB)", 0, -90, +12, 1) : db2linear : smooth(0.999);
 
 gain_g = hgroup("Gain", (gain_l, gain_r));
 
