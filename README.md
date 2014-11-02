@@ -29,4 +29,4 @@ make lv2
 Etc
 ---
 
-See Faust docs to more info.
+See [Faust](http://faust.grame.fr/) docs for more info.
