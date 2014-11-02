@@ -5,7 +5,7 @@ LV2_STEREO_BUNDLE = $(LV2_STEREO_NAME).lv2
 lv2: lv2-stereo
 
 lv2-stereo: clean-lv2-stereo
-	env faust2lv2 $(LV2_STEREO_NAME).dsp -uri-prefix $(LV2_URI_PREFIX)
+	faust2lv2 $(LV2_STEREO_NAME).dsp -uri-prefix $(LV2_URI_PREFIX)
 
 clean: clean-lv2
 
